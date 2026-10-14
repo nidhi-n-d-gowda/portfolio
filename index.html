@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Nidhi N D | Software Developer & AI Engineer Portfolio</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Nidhi N D - Information Science & Engineering Student at Atria Institute of Technology (CGPA 9.04). Aspiring Software Developer specializing in On-Device AI, Full-Stack RAG, Java DSA, and Android.">
+  <meta name="keywords" content="Nidhi N D, Nidhi Gowda, Software Developer, Atria Institute of Technology, Qualcomm Snapdragon AI, SnapScribe Edge, OmniDoc AI, Java DSA, Android Developer">
+  <meta name="author" content="Nidhi N D">
+  
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="Nidhi N D | Software Developer Portfolio">
+  <meta property="og:description" content="ISE Student @ Atria Institute of Technology (CGPA 9.04) | On-Device AI, Full-Stack RAG, Android & Java DSA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nidhi-n-d-gowda.github.io/portfolio">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated Particle Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Mobile Bottom Floating Action Bar -->
+  <div class="mobile-action-bar">
+    <a href="assets/Nidhi_N_D_Resume.pdf" download class="mobile-action-btn primary" title="Resume">
+      <i class="fa-solid fa-file-arrow-down"></i>
+      <span>Resume</span>
+    </a>
+    <a href="https://www.linkedin.com/in/nidhi-n-d-gowda-3a6651362/" target="_blank" rel="noopener noreferrer" class="mobile-action-btn" title="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/nidhi-n-d-gowda" target="_blank" rel="noopener noreferrer" class="mobile-action-btn" title="GitHub">
+      <i class="fa-brands fa-github"></i>
+      <span>GitHub</span>
+    </a>
+    <a href="tel:+917204831743" class="mobile-action-btn" title="Call">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call</span>
+    </a>
+    <a href="#contact" class="mobile-action-btn highlight" title="Message">
+      <i class="fa-solid fa-paper-plane"></i>
+      <span>Contact</span>
+    </a>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-badge">N</span>
+        <span class="logo-text">Nidhi<span>.dev</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#experience" class="nav-item">Experience</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#certifications" class="nav-item">Certificates</a></li>
+        <li><a href="#education" class="nav-item">Education</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="assets/Nidhi_N_D_Resume.pdf" download="Nidhi_N_D_Resume.pdf" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-download"></i>
+          <span>Resume</span>
+        </a>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Status Pill -->
+        <div class="status-pill animate-fade">
+          <span class="pulse-dot"></span>
+          <span>Open to Software Developer & AI Internships 2026</span>
+        </div>
+
+        <h1 class="hero-title animate-fade">
+          Hi, I'm <span class="gradient-text">Nidhi N D</span>
+        </h1>
+
+        <div class="typing-container animate-fade">
+          <span class="typing-prefix">I build </span>
+          <span class="typing-text" id="typing-text"></span>
+          <span class="cursor">&nbsp;</span>
+        </div>
+
+        <p class="hero-bio animate-fade">
+          Information Science & Engineering undergraduate at <strong>Atria Institute of Technology, Bengaluru</strong> (<strong>CGPA: 9.04</strong>). 
+          Specializing in <strong>On-Device AI (Qualcomm Hexagon NPU)</strong>, <strong>Full-Stack RAG Systems</strong>, <strong>Java & Data Structures (DSA)</strong>, and <strong>Native Android Applications</strong>. Recipient of 3rd Prize at College Project Expo and Web Development LOR.
+        </p>
+
+        <!-- Quick Hero CTAs -->
+        <div class="hero-cta-group animate-fade">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="assets/Nidhi_N_D_Resume.pdf" download="Nidhi_N_D_Resume.pdf" class="btn btn-secondary">
+            <i class="fa-solid fa-file-pdf"></i>
+            <span>Download Resume</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nidhi-n-d-gowda-3a6651362/" target="_blank" rel="noopener noreferrer" class="social-icon-btn linkedin" title="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/nidhi-n-d-gowda" target="_blank" rel="noopener noreferrer" class="social-icon-btn github" title="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <!-- Metric Counter Cards -->
+        <div class="stats-grid animate-fade">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="stat-number" data-target="9.04" data-decimals="2">0.00</div>
+            <div class="stat-label">BE CGPA (ISE)</div>
+            <div class="stat-sub">Atria Institute of Tech</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="stat-number" data-target="90.8" data-suffix="%" data-decimals="1">0%</div>
+            <div class="stat-label">12th PUC Science</div>
+            <div class="stat-sub">SDMS PU College</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="stat-number" data-target="6" data-suffix="+">0</div>
+            <div class="stat-label">Flagship Projects</div>
+            <div class="stat-sub">On-Device AI, RAG, Android</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="stat-number" data-target="10" data-suffix="+">0</div>
+            <div class="stat-label">Honors & Certs</div>
+            <div class="stat-sub">Qualcomm, AWS, IIT Bombay</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Engineering With Purpose & Precision</h2>
+          <p class="section-subtitle">Bridging theoretical computer science with high-performance real-world software.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-bio-card">
+            <div class="about-icon-header">
+              <i class="fa-solid fa-code"></i>
+              <h3>Full-Stack, Mobile & Edge AI Explorer</h3>
+            </div>
+            <p>
+              I am a driven Information Science and Engineering student at Atria Institute of Technology, maintaining a <strong>9.04 CGPA</strong>. My development journey centers on building reliable software—ranging from <strong>local on-device speech & language models</strong> executing on 45 TOPS NPUs to <strong>full-stack enterprise systems</strong> and <strong>native Android apps</strong>.
+            </p>
+            <p>
+              Whether competing in competitive programming challenges like <strong>Game of Codes 2026</strong>, optimizing algorithms with Object-Oriented principles, or authoring social welfare AI analytics reports, I pride myself on clean architecture, performance, and continuous learning.
+            </p>
+
+            <div class="about-pills">
+              <span class="about-pill"><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka</span>
+              <span class="about-pill"><i class="fa-solid fa-building-columns"></i> Atria Institute of Technology</span>
+              <span class="about-pill"><i class="fa-solid fa-trophy"></i> 3rd Prize Project Expo Winner</span>
+              <span class="about-pill"><i class="fa-solid fa-scroll"></i> Web Dev LOR Recipient</span>
+            </div>
+          </div>
+
+          <div class="about-card highlight-card">
+            <div class="highlight-item">
+              <div class="hl-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <h4>On-Device & Generative AI</h4>
+                <p>Architecting offline privacy-first AI pipelines using Qualcomm AI Hub, Whisper, Phi-3.5-mini, and FastAPI RAG.</p>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <div class="hl-icon"><i class="fa-brands fa-java"></i></div>
+              <div>
+                <h4>Java & Algorithmic Problem Solving</h4>
+                <p>Strong foundation in Data Structures, OOP, Time & Space Complexity, and modular enterprise design.</p>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <div class="hl-icon"><i class="fa-brands fa-android"></i></div>
+              <div>
+                <h4>Android & Full-Stack Systems</h4>
+                <p>Building production-ready native apps with SQLite, Material Design 3, and responsive React web frontends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical Skills Matrix</h2>
+          <p class="section-subtitle">Core competencies developed through rigorous coursework, internships, and production builds.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <i class="fa-solid fa-terminal cat-icon"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlighted"><i class="fa-brands fa-java"></i> Java (Core & OOP)</span>
+              <span class="skill-tag highlighted"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-tag highlighted"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</span>
+              <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
+              <span class="skill-tag"><i class="fa-solid fa-microchip"></i> Embedded C</span>
+              <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Core Computer Science & DSA -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <i class="fa-solid fa-brain cat-icon"></i>
+              <h3>DSA & Core Concepts</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlighted">Data Structures in Java</span>
+              <span class="skill-tag highlighted">Algorithmic Problem Solving</span>
+              <span class="skill-tag">Object-Oriented Programming (OOP)</span>
+              <span class="skill-tag">Time & Space Complexity</span>
+              <span class="skill-tag">Database Management Systems</span>
+              <span class="skill-tag">Relational Schemas</span>
+              <span class="skill-tag">System Architecture</span>
+            </div>
+          </div>
+
+          <!-- Category 3: AI & Frameworks -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <i class="fa-solid fa-robot cat-icon"></i>
+              <h3>AI, Frameworks & Web</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlighted">Qualcomm AI Hub (Whisper, Phi-3.5)</span>
+              <span class="skill-tag highlighted">ONNX Runtime (QNN / NPU)</span>
+              <span class="skill-tag highlighted">RAG (Retrieval-Augmented Gen)</span>
+              <span class="skill-tag">FastAPI (Python)</span>
+              <span class="skill-tag">React & Vite</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">JWT Token Authentication</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Databases -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <i class="fa-solid fa-screwdriver-wrench cat-icon"></i>
+              <h3>Databases, Mobile & Tools</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag highlighted"><i class="fa-brands fa-android"></i> Android Studio</span>
+              <span class="skill-tag highlighted"><i class="fa-solid fa-database"></i> MySQL</span>
+              <span class="skill-tag highlighted"><i class="fa-solid fa-database"></i> SQLite</span>
+              <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Arduino IDE</span>
+              <span class="skill-tag">Material Design 3</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="section exp-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Work History</span>
+          <h2 class="section-title">Internships & Professional Impact</h2>
+          <p class="section-subtitle">Hands-on corporate and non-profit experience delivering production code and research.</p>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Experience 1: SkillCraft -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="exp-role">Web Development Intern</h3>
+                  <h4 class="exp-company">SkillCraft Technology</h4>
+                </div>
+                <div class="exp-badge">
+                  <i class="fa-solid fa-star"></i> Earned LOR & Certificate
+                </div>
+              </div>
+
+              <p class="exp-desc">
+                Engineered four comprehensive responsive web applications utilizing HTML5, CSS3, ES6+ JavaScript, DOM Manipulation, and modern responsive design systems.
+              </p>
+
+              <ul class="exp-bullets">
+                <li>Developed an interactive <strong>Task Manager Web App</strong> with LocalStorage synchronization, modal editing, and real-time completion progress tracking.</li>
+                <li>Built an 8-Semester <strong>Cosmic Aurora Quiz Arena</strong> supporting multi-format questions (Radio, Checkbox, Fill-in-the-Blank) with live timer countdowns.</li>
+                <li>Designed a millisecond-precision <strong>Stopwatch & Lap Timer App</strong> featuring 60fps tracking (`performance.now()`) and keyboard shortcuts.</li>
+                <li>Awarded a formal <strong>Letter of Recommendation (LOR)</strong> for outstanding code quality, modularity, and technical discipline.</li>
+              </ul>
+
+              <div class="exp-tags">
+                <span>HTML5 / CSS3</span>
+                <span>JavaScript (ES6+)</span>
+                <span>DOM Manipulation</span>
+                <span>LocalStorage API</span>
+                <span>Responsive UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2: InAmigos -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="exp-role">Content Writer & AI Data Analytics Intern</h3>
+                  <h4 class="exp-company">InAmigos Foundation</h4>
+                </div>
+                <div class="exp-badge subtle">
+                  Recent Experience
+                </div>
+              </div>
+
+              <p class="exp-desc">
+                Conducted analytical evaluations and consulting-style research reporting on artificial intelligence tools applied to social welfare and education.
+              </p>
+
+              <ul class="exp-bullets">
+                <li>Compiled comprehensive research reports analyzing AI-assisted primary education tools and literacy metrics (<strong>+38.5% uplift</strong>) in rural India.</li>
+                <li>Authored a consulting-style <strong>AI Impact Analysis Report</strong> evaluating 6 core social welfare projects to optimize operational reporting.</li>
+              </ul>
+
+              <div class="exp-tags">
+                <span>AI Data Analytics</span>
+                <span>Impact Assessment</span>
+                <span>Research Synthesis</span>
+                <span>Statistical Reporting</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects That Solve Real Problems</h2>
+          <p class="section-subtitle">From Snapdragon NPU Edge AI copilot to Full-Stack RAG platforms and Android systems.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">Edge AI & GenAI</button>
+          <button class="filter-btn" data-filter="android">Android & Java</button>
+          <button class="filter-btn" data-filter="web">Web & IoT</button>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: SnapScribe Edge (Qualcomm) -->
+          <div class="project-card featured" data-category="ai">
+            <div class="card-glow"></div>
+            <div class="project-banner">
+              <div class="banner-badge highlight">
+                <i class="fa-solid fa-microchip"></i> Qualcomm Snapdragon® Challenge
+              </div>
+              <div class="banner-badge subtle">100% Offline NPU</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">
+                SnapScribe Edge ⚡
+              </h3>
+              <p class="project-tagline">On-Device Multimodal Meeting & Productivity Copilot for Snapdragon® X Series PCs</p>
+              
+              <p class="project-summary">
+                Built for the <strong>Qualcomm Snapdragon® AI Lab Build & Present Challenge</strong>. Executes real-time speech transcription (Whisper INT8) and meeting intelligence (Phi-3.5-mini INT4) <strong>100% offline</strong> directly on the <strong>Qualcomm® Hexagon™ NPU (45 TOPS)</strong> via ONNX Runtime with QNN Execution Provider.
+              </p>
+
+              <div class="project-highlights">
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Sub-50ms latency local speech-to-text with 0.0 KB cloud transmission.</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Operates at ~1.2W on Hexagon NPU (vs 16.5W on CPU), saving >92% power with silent fan operation.</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Local "Chat with Meeting" grounded semantic Q&A with air-gapped security.</div>
+              </div>
+
+              <div class="tech-pills">
+                <span>Qualcomm AI Hub</span>
+                <span>Hexagon NPU</span>
+                <span>ONNX Runtime (QnnHtp)</span>
+                <span>Whisper INT8</span>
+                <span>Phi-3.5-mini</span>
+                <span>Python & Streamlit</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/nidhi-n-d-gowda" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+                <a href="https://www.linkedin.com/in/nidhi-n-d-gowda-3a6651362/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn Post
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: OmniDoc AI (Full-Stack RAG) -->
+          <div class="project-card featured" data-category="ai web">
+            <div class="card-glow"></div>
+            <div class="project-banner">
+              <div class="banner-badge highlight">
+                <i class="fa-solid fa-sparkles"></i> Full-Stack GenAI
+              </div>
+              <div class="banner-badge subtle">JWT Auth & Multi-Chat</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">
+                OmniDoc AI
+              </h3>
+              <p class="project-tagline">Intelligent Multi-Document RAG Knowledge Assistant & Workspace</p>
+              
+              <p class="project-summary">
+                A high-security document intelligence copilot allowing users to upload PDFs, auto-generate vector embeddings, and query them with real-time token streaming (SSE) and exact page citations. Features salted <strong>bcrypt password hashing</strong>, <strong>JWT authentication</strong>, SQLite persistence, and ChatGPT-style multi-conversation history.
+              </p>
+
+              <div class="project-highlights">
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Semantic vector retrieval using Gemini embeddings & cosine similarity.</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Non-blocking token streaming with automated multi-model failover for 99.9% uptime.</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> User data isolation and conversation management with SQLite database.</div>
+              </div>
+
+              <div class="tech-pills">
+                <span>FastAPI</span>
+                <span>React & Vite</span>
+                <span>Gemini 3.6 / Flash</span>
+                <span>Vector Embeddings</span>
+                <span>JWT & bcrypt</span>
+                <span>SQLite</span>
+                <span>Tailwind CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/nidhi-n-d-gowda/omnidoc-ai" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Smart Parking System (Android) -->
+          <div class="project-card" data-category="android">
+            <div class="project-banner">
+              <div class="banner-badge"><i class="fa-brands fa-android"></i> Native Android App</div>
+              <div class="banner-badge subtle">Lead Developer</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Smart Parking System</h3>
+              <p class="project-tagline">Real-Time Mobile Parking Slot Booking & Billing Management</p>
+              
+              <p class="project-summary">
+                Built a native Android application enabling urban commuters to check real-time slot availability, reserve parking spots, track entry/exit timestamps, and automatically calculate duration-based billing and overtime fines.
+              </p>
+
+              <div class="project-highlights">
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Dynamic color-coded parking grid (Available, Reserved, Occupied).</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> SQLite relational database for offline transactions, user logs, and receipts.</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Integrated Admin Dashboard for parking revenue and occupancy analytics.</div>
+              </div>
+
+              <div class="tech-pills">
+                <span>Java</span>
+                <span>Android Studio</span>
+                <span>SQLite DB</span>
+                <span>XML Layouts</span>
+                <span>Material Design 3</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/nidhi-n-d-gowda" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: Doctor Appointment Management System -->
+          <div class="project-card" data-category="android">
+            <div class="project-banner">
+              <div class="banner-badge prize"><i class="fa-solid fa-trophy"></i> 🏆 3rd Prize – Project Expo</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Doctor Appointment System</h3>
+              <p class="project-tagline">Modular Clinical Scheduling & Management Application</p>
+              
+              <p class="project-summary">
+                Designed a comprehensive Java enterprise application for clinical appointment scheduling, doctor availability management, and patient record tracking, winning <strong>3rd Prize at the College Project Exhibition</strong>.
+              </p>
+
+              <div class="project-highlights">
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Implemented core OOP design patterns: Encapsulation, Inheritance, and Polymorphism.</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Connected to MySQL DBMS for relational data consistency and patient lookups.</div>
+              </div>
+
+              <div class="tech-pills">
+                <span>Java</span>
+                <span>MySQL</span>
+                <span>OOP Design</span>
+                <span>Relational DBMS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/nidhi-n-d-gowda" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5: BEATBOX Music Player -->
+          <div class="project-card" data-category="web">
+            <div class="project-banner">
+              <div class="banner-badge"><i class="fa-solid fa-music"></i> Interactive Web App</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">BEATBOX Music Player</h3>
+              <p class="project-tagline">Emotion-Based Audio Player & Interactive Interface</p>
+              
+              <p class="project-summary">
+                Built an interactive frontend music player featuring emotion-based music categories, play/pause and track controls, playlist search, and smooth CSS audio visualizer animations.
+              </p>
+
+              <div class="tech-pills">
+                <span>HTML5 Audio API</span>
+                <span>CSS3 Animations</span>
+                <span>JavaScript (ES6+)</span>
+                <span>UI/UX Design</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/nidhi-n-d-gowda" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> GitHub Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6: Automatic Medicine Intimator (IoT) -->
+          <div class="project-card" data-category="web">
+            <div class="project-banner">
+              <div class="banner-badge"><i class="fa-solid fa-heart-pulse"></i> IoT Healthcare Expo</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Automatic Medicine Intimator</h3>
+              <p class="project-tagline">Embedded Healthcare IoT Medication Reminder System</p>
+              
+              <p class="project-summary">
+                Developed an embedded healthcare IoT prototype reminding elderly and critical patients to take scheduled medication via a Real-Time Clock (RTC), LCD display, and buzzer alert system.
+              </p>
+
+              <div class="tech-pills">
+                <span>Arduino Nano</span>
+                <span>RTC DS3231</span>
+                <span>LCD Display</span>
+                <span>Embedded C</span>
+                <span>Hardware Prototyping</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/nidhi-n-d-gowda" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Achievements Section -->
+    <section class="section cert-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Certifications & Honors</h2>
+          <p class="section-subtitle">Industry job simulations, competitive programming challenges, and academic recognitions.</p>
+        </div>
+
+        <div class="cert-grid">
+          
+          <div class="cert-card">
+            <div class="cert-icon-badge gold"><i class="fa-solid fa-trophy"></i></div>
+            <div class="cert-info">
+              <h4>3rd Prize Winner — College Project Exhibition</h4>
+              <p class="cert-issuer">Atria Institute of Technology</p>
+              <p class="cert-detail">Awarded for engineering the modular Java Doctor Appointment Management System.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-badge blue"><i class="fa-solid fa-microchip"></i></div>
+            <div class="cert-info">
+              <h4>Qualcomm Snapdragon® AI Lab Challenge</h4>
+              <p class="cert-issuer">Qualcomm & Snapdragon</p>
+              <p class="cert-detail">Built SnapScribe Edge copilot for Hexagon NPU 45 TOPS on Snapdragon X Series PCs.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-badge green"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="cert-info">
+              <h4>Game of Codes 2026 Participation</h4>
+              <p class="cert-issuer">P.E.S. Modern College of Engg, Pune & Unstop</p>
+              <p class="cert-detail">Daily competitive programming, algorithmic debugging, and problem-solving challenge.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-badge purple"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-info">
+              <h4>Letter of Recommendation (LOR)</h4>
+              <p class="cert-issuer">SkillCraft Technology</p>
+              <p class="cert-detail">Awarded for high-discipline web development and delivery of 4 production-grade projects.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-badge blue"><i class="fa-brands fa-aws"></i></div>
+            <div class="cert-info">
+              <h4>AWS Cloud Practitioner Essentials</h4>
+              <p class="cert-issuer">AWS Training & Certification</p>
+              <p class="cert-detail">Fundamental cloud infrastructure, compute, security, and storage architecture.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-badge green"><i class="fa-brands fa-google"></i></div>
+            <div class="cert-info">
+              <h4>Intro to Generative AI & Responsible AI</h4>
+              <p class="cert-issuer">Google Cloud & Simplilearn SkillUp</p>
+              <p class="cert-detail">Foundations of LLMs, prompt engineering, attention mechanisms, and safety guardrails.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-badge red"><i class="fa-brands fa-java"></i></div>
+            <div class="cert-info">
+              <h4>Java Training Program (Scored 80%)</h4>
+              <p class="cert-issuer">Spoken Tutorial, IIT Bombay</p>
+              <p class="cert-detail">Verified examination score of 80% in Core Java, OOP design, and syntax mastery.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-badge purple"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="cert-info">
+              <h4>Deloitte Tech & Cybersecurity Job Simulation</h4>
+              <p class="cert-issuer">Forage</p>
+              <p class="cert-detail">Enterprise architecture analysis, forensic cybersecurity simulation, and remediation.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-badge orange"><i class="fa-solid fa-flag"></i></div>
+            <div class="cert-info">
+              <h4>Adobe University Hackathon & Spider-Man CTF</h4>
+              <p class="cert-issuer">Adobe, Unstop & HackoSquad</p>
+              <p class="cert-detail">Fast-paced competitive software development and cyber capture-the-flag security solving.</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-badge blue"><i class="fa-solid fa-landmark"></i></div>
+            <div class="cert-info">
+              <h4>National Financial Literacy & VBYLD Quizzes</h4>
+              <p class="cert-issuer">NISM, SEBI & Ministry of Youth Affairs</p>
+              <p class="cert-detail">National-level certifications evaluating capital markets, governance, and financial literacy.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section edu-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education & Standing</h2>
+          <p class="section-subtitle">Consistently ranking in the top percentiles of academic excellence.</p>
+        </div>
+
+        <div class="edu-grid">
+          
+          <div class="edu-card highlighted">
+            <div class="edu-badge-tag">Current Standing: 9.04 CGPA</div>
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Bachelor of Engineering (B.E.)</h3>
+            <h4>Information Science & Engineering (ISE)</h4>
+            <p class="edu-institution"><i class="fa-solid fa-building-columns"></i> Atria Institute of Technology, Bengaluru</p>
+            <p class="edu-timeline"><i class="fa-solid fa-calendar-days"></i> 2nd Year (3rd Semester) • Ongoing</p>
+            <div class="edu-score">
+              <span>Cumulative CGPA:</span> <strong>9.04 / 10.0</strong>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-badge-tag">90.83% Distinction</div>
+            <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+            <h3>Pre-University Course (PUC - 12th)</h3>
+            <h4>PCMB Science Stream</h4>
+            <p class="edu-institution"><i class="fa-solid fa-building-columns"></i> SDMS PU College</p>
+            <p class="edu-timeline"><i class="fa-solid fa-calendar-days"></i> Graduated 2024</p>
+            <div class="edu-score">
+              <span>Score:</span> <strong>90.83%</strong>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-badge-tag">87.8% First Class</div>
+            <div class="edu-icon"><i class="fa-solid fa-book"></i></div>
+            <h3>Secondary School (SSLC - 10th)</h3>
+            <h4>General Curriculum</h4>
+            <p class="edu-institution"><i class="fa-solid fa-building-columns"></i> KPS N.R. Pura</p>
+            <p class="edu-timeline"><i class="fa-solid fa-calendar-days"></i> Graduated 2022</p>
+            <div class="edu-score">
+              <span>Score:</span> <strong>87.8%</strong>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in collaborating or discussing software engineering internship opportunities? Reach out directly!</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details -->
+          <div class="contact-card info-card">
+            <h3>Contact Information</h3>
+            <p class="contact-intro">
+              Feel free to call, email, or message me directly on LinkedIn. I reply promptly!
+            </p>
+
+            <div class="contact-item" id="copy-email-btn" title="Click to copy email">
+              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="ci-details">
+                <span class="ci-label">Email (Click to copy)</span>
+                <span class="ci-val">nidhindgowda@gmail.com</span>
+              </div>
+              <span class="copy-badge"><i class="fa-solid fa-copy"></i></span>
+            </div>
+
+            <a href="tel:+917204831743" class="contact-item">
+              <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="ci-details">
+                <span class="ci-label">Phone / WhatsApp</span>
+                <span class="ci-val">+91 72048 31743</span>
+              </div>
+              <span class="copy-badge"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </a>
+
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="ci-details">
+                <span class="ci-label">Location</span>
+                <span class="ci-val">Bengaluru, Karnataka, India</span>
+              </div>
+            </div>
+
+            <!-- Social links -->
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/nidhi-n-d-gowda-3a6651362/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="https://github.com/nidhi-n-d-gowda" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://wa.me/917204831743" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-card form-card">
+            <h3>Send a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="Recruiter / Collaborator Name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required placeholder="name@company.com">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required placeholder="Hi Nidhi, I'd like to discuss an opportunity..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p>© 2026 <strong>Nidhi N D</strong>. Built with performance, accessibility, and modern UI engineering.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Popup -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-msg">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
